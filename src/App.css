@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Edu+TAS+Beginner&family=Koulen&family=Macondo&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@100&family=Smooch&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: purple;
+  font-family: 'Edu TAS Beginner', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 0.25rem;
+  background-color: white;
+  width: 70vw;
+  max-width: 1170px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  width: 40%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.question-tag {
+  margin-top: 10px;
+  width: 60%;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  padding: 10px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn {
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 90%;
+  border: none;
+}
+
+@media screen and (max-width: 992px) {
+  .container{
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title, .question-tag {
+    width: 100%;
   }
 }
